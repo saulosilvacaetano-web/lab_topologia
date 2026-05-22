@@ -88,7 +88,7 @@ cd lab_topologia
 ## 🐝 Passo 2 — Deploy da Topologia
 
 ```bash
-sudo containerlab deploy -t lab.clab.yml --reconfigure
+sudo containerlab deploy -t topologia.yml --reconfigure
 ```
 
 Isso irá:
@@ -99,7 +99,7 @@ Isso irá:
 Verifique se o lab está rodando:
 
 ```bash
-docker ps --filter "label=containerlab=lab"
+docker ps --filter "label=containerlab=saulo-lab"
 ```
 
 ---
@@ -108,7 +108,7 @@ docker ps --filter "label=containerlab=lab"
 
 
 ```bash
-docker exec clab-lab-node-a ping -c 3 10.0.0.2
+docker exec clab-saulo-lab-node-a ping -c 3 10.0.0.2
 ```
 
 **Resultado esperado:** `0% packet loss`  
